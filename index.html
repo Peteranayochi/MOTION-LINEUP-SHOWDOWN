@@ -14,8 +14,19 @@ button{font:inherit;cursor:pointer;border:0;border-radius:12px;padding:11px 16px
 .tabs{display:flex;gap:8px;margin:20px 0}.tabs button.active{background:#244b67;color:#8be7ff;border:1px solid #3b92b8}.tabs button{background:#142238;color:#b8c8dd;border:1px solid #2c3d55}.leader-row{display:flex;align-items:center;gap:14px;padding:13px;border-bottom:1px solid #26364b}.rank{font-weight:900;color:var(--gold);width:28px}.leader-row strong{flex:1}.score{font-weight:850;color:var(--cyan)}.notice{border:1px solid #66552e;background:#2c2618;color:#e8d39b;border-radius:12px;padding:12px;font-size:12px;margin-top:18px}
 footer{margin-top:40px;text-align:center;color:#71849e;font-size:12px}
 @media(max-width:650px){.wrap{padding:14px 13px 40px}.hero{padding:45px 0 24px}.stats{gap:8px}.stat{padding:12px}.stat strong{font-size:20px}.cards{grid-template-columns:1fr}.slots{gap:5px}.slot{min-height:68px;font-size:10px;padding:4px}.section-head{align-items:start;flex-direction:column}}
-</style>
-
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://unavatar.io/x/motiongame_");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+ </style> 
 <style>
 .extra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
 .metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
